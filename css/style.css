@@ -35,7 +35,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Circular Std', 'SF Pro Display', 'SF Pro Text', system, sans-serif;
     line-height: 1.8;
     color: #999
 }
@@ -178,24 +178,16 @@ h5 {
 ==================================================*/
 
 .box-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.95);
-    height: 50px;
-    width: 100%;
-    z-index: 3;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.box-header {
-    height: 80px;
-    background: transparent;
+    height: 140px;
     box-shadow: none;
 }
-
+.box-logo {
+    display: block;
+    padding: 20px;
+}
+.box-logo img {
+    width: 100px;
+}
 .box-header {
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -224,10 +216,6 @@ h5 {
     background-color: rgba(255, 255, 255, 0.96);
 }
 
-.box-logo {
-    display: block;
-    padding: 20px;
-}
 
 .box-primary-nav-trigger {
     position: absolute;
@@ -424,7 +412,7 @@ h5 {
 .box-intro {
     text-align: center;
     display: table;
-    height: 100vh;
+    height: 120px;
     width: 100%;
 }
 
@@ -769,10 +757,10 @@ b i:last-child {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #ffbf00;
+    background-color: white;
     padding: 5px 20px;
     border-radius: 25px;
-    color: #333;
+    color: #142C52;
     margin-top: 10px;
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
@@ -780,7 +768,8 @@ b i:last-child {
     transition: all .3s ease-in-out .3s;
     opacity: 0;
     font-size: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .portfolio_item:hover .portfolio_item_hover {
@@ -1150,6 +1139,13 @@ textarea:focus {
     }
     .portfolio .categories-grid .categories ul li {
         float: none;
+    }
+    .box-header {
+        text-align: center;
+        height: 120px;
+    }
+    .box-logo img {
+        width: 80px;
     }
 }
 
